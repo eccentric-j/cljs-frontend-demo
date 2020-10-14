@@ -81,3 +81,8 @@ Could be expressed like:
 #+END_SRC
 
 Which would make the =json->clj= function a bit more generic and focused.
+
+** Credits
+
+Thanks to https://newsapi.org/ for providing me a JSON sample of news articles
+to display in the UI.
