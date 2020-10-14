@@ -1,0 +1,21 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ [[reagent "1.0.0-alpha2"]
+  [kitchen-async "0.1.0-SNAPSHOT"]]
+
+ :http {:port 9634}
+ :dev-http {8888 "resources/public"}
+
+ :builds
+ {:app {:target :browser
+        :output-dir "resources/public/js"
+        :asset-path "/js"
+        :devtools {:repl-init-ns cljs-news.app
+                   :repl-pprint true}
+        :modules {:main {:entries [cljs-news.app]
+                         :init-fn cljs-news.app/init}}}}}

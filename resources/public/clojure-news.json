@@ -1,0 +1,240 @@
+{
+   "status":"ok",
+   "totalResults":18,
+   "articles":[
+      {
+         "source":{
+            "id":null,
+            "name":"Stopa.io"
+         },
+         "author":"Stepan Parunashvili",
+         "title":"Simulating RAM in Clojure",
+         "description":"“Computers are all made out of logic gates”. We’ve heard that saying before. We also have a sense that logic gates are very simple machines, analogous to light switches even. This raises the questi...",
+         "url":"https://stopa.io/post/258",
+         "urlToImage":"https://stopa.io/api/og-image/258",
+         "publishedAt":"2020-10-12T17:48:46Z",
+         "content":"“Computers are all made out of logic gates”. We’ve heard that saying before. We also have a sense that logic gates are very simple machines, analogous to light switches even. This raises the question… [+37440 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Blogspot.com"
+         },
+         "author":"Hubert Klein Ikkink",
+         "title":"Clojure Goodness: Shuffle A Collection",
+         "description":"A blog about Groovy, Grails, Gradle and other cool developer subjects.",
+         "url":"https://mrhaki.blogspot.com/2020/10/clojure-goodness-shuffle-collection.html",
+         "urlToImage":"https://www.mrhaki.com/images/jdriven-photo.png",
+         "publishedAt":"2020-10-11T20:48:56Z",
+         "content":"In Clojure we can use the shuffle function with a collection argument to get a new collection where the items of the input collection are re-ordered randomly. The function delegates to the Java java.… [+1158 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Blogspot.com"
+         },
+         "author":"Hubert Klein Ikkink",
+         "title":"Clojure Goodness: Formatting With Java Format String",
+         "description":"A blog about Groovy, Grails, Gradle and other cool developer subjects.",
+         "url":"https://mrhaki.blogspot.com/2020/10/clojure-goodness-formatting-with-java.html",
+         "urlToImage":"https://www.mrhaki.com/images/jdriven-photo.png",
+         "publishedAt":"2020-10-10T13:53:54Z",
+         "content":"In Clojure we can format a string using Common Lisp format syntax or the Java format string syntax. In the post we will look at the how we can use the Java format string syntax. We must use the forma… [+2100 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Klipse.tech"
+         },
+         "author":"Yehonathan Sharvit",
+         "title":"Clojure and EDN diff tool",
+         "description":"Compare Clojure and EDN data structures online and display results in the browser.",
+         "url":"https://blog.klipse.tech//clojure/2020/10/08/edn-diff.html",
+         "urlToImage":"https://blog.klipse.tech/assets/klipse.png",
+         "publishedAt":"2020-10-08T05:21:22Z",
+         "content":"Compare recursively two Clojure data structures a and b.\n\nComparison is updated as you type…\n\n\n(require '[clojure.data :refer [diff]])\n\n\n \n(def a {:only-in-a 1\n :both-in-a-and-b 3}) \n\r\n\n\n(def b {:onl… [+697 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Metosin.fi"
+         },
+         "author":"Tommi Reiman",
+         "title":"Malli, Data-Driven Schemas for Clojure/Script",
+         "description":"Introduction   After over a year in incubation, we are proud to announce the first alpha-version of Malli, a new data validation and specification library for Clojure/Script. It provides unified tools for building data-driven schema systems covering schema de…",
+         "url":"http://metosin.fi/blog/malli/",
+         "urlToImage":"https://www.metosin.fi/img/posts/malli.png",
+         "publishedAt":"2020-10-08T00:00:00Z",
+         "content":"Introduction\nAfter over a year in incubation, we are proud to announce the first alpha-version of Malli, a new data validation and specification library for Clojure/Script. It provides unified tools … [+16833 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Blogspot.com"
+         },
+         "author":"Hubert Klein Ikkink",
+         "title":"Clojure Goodness: Finding The Maximum Or Minimum Value",
+         "description":"A blog about Groovy, Grails, Gradle and other cool developer subjects.",
+         "url":"https://mrhaki.blogspot.com/2020/10/clojure-goodness-finding-maximum-or.html",
+         "urlToImage":"https://www.mrhaki.com/images/jdriven-photo.png",
+         "publishedAt":"2020-10-06T20:08:43Z",
+         "content":"To find the maximum or minimum value for numeric values we can use the max and min function. The functions accept one or more numeric arguments and the value that is maximum or minimum is returned. I… [+1466 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Stopa.io"
+         },
+         "author":"stopachka",
+         "title":"Simulating Machines in Clojure",
+         "description":"Article URL: https://stopa.io/post/255\nComments URL: https://news.ycombinator.com/item?id=24701737\nPoints: 5\n# Comments: 0",
+         "url":"https://stopa.io/post/255",
+         "urlToImage":"https://stopa.io/api/og-image/255",
+         "publishedAt":"2020-10-06T20:01:00Z",
+         "content":"My cofounder Joe and I recently finished SICP. It was a mind-bending experience: you start from just 3 concepts, and you recursively build up algebraic equation solvers, circuit simulators, 4 interpr… [+19797 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Blogspot.com"
+         },
+         "author":"Hubert Klein Ikkink",
+         "title":"Clojure Goodness: There Is Truth In Many Things",
+         "description":"A blog about Groovy, Grails, Gradle and other cool developer subjects.",
+         "url":"https://mrhaki.blogspot.com/2020/10/clojure-goodness-there-is-truth-in-many.html",
+         "urlToImage":"https://www.mrhaki.com/images/jdriven-photo.png",
+         "publishedAt":"2020-10-05T19:00:29Z",
+         "content":"In Clojure there are only two things false in a boolean or conditional context: false and nil. All other values are threated as true. A value that is false in a boolean context is also called falsey,… [+893 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Braveclojure.com"
+         },
+         "author":"Brave Clojure Jobs",
+         "title":"Clojure Engineer",
+         "description":null,
+         "url":"https://jobs.braveclojure.com/jobs/17592186047290/clojure-engineer-statsbomb",
+         "urlToImage":null,
+         "publishedAt":"2020-10-05T14:17:25Z",
+         "content":"Clojure Engineer\r\nStatsBomb | Remote in the UK, or Cairo, Egypt\r\nremote\r\nStatsBomb are football analytics experts, working with the world's biggest clubs\r\n£25000 - £65000\r\nhttps://statsbomb.com/caree… [+1519 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Dragan.rocks"
+         },
+         "author":"Dragan Djuric",
+         "title":"Going faster than TensorFlow with Clojure",
+         "description":"In this article, we're measuring the performance of Deep Diamond on the CPU. (Not) surprisingly, it is considerably faster than Keras with Tensorflow.",
+         "url":"https://dragan.rocks/articles/20/Going-faster-than-TensorFlow-with-Clojure",
+         "urlToImage":null,
+         "publishedAt":"2020-10-05T11:48:00Z",
+         "content":"A few weeks ago I've shown you how simple Clojure's\nDeep Diamond() is, even compared to Keras. I've also mentioned\nthat it's superfast, and you probably didn't believe me. Let's quickly\ncompare the t… [+3273 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Learningclojure.com"
+         },
+         "author":"John Lawrence Aspden",
+         "title":"Hello Clojure and Emacs",
+         "description":"So, my next task is to get Clojure working with EMACS. Learning the lessons of the last post, I first remove from my emacs installation all...",
+         "url":"http://www.learningclojure.com/2020/10/hello-clojure-and-emacs.html",
+         "urlToImage":null,
+         "publishedAt":"2020-10-04T15:52:23Z",
+         "content":"So, my next task is to get Clojure working with EMACS.\r\nLearning the lessons of the last post, I first remove from my emacs installation all clojure-related packages, and all clojure references from … [+6941 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Agiliway.com"
+         },
+         "author":"admin",
+         "title":"Healthcare/Fintech Industry: Multi-platform Clojure Solution",
+         "description":"The product is aiming to change the system of healthcare for patients, providers, and employers by delivering a clear and affordable healthcare experience for patients",
+         "url":"https://agiliway.com/healthcare-fintech-industry-multi-platform-clojure-solution/",
+         "urlToImage":null,
+         "publishedAt":"2020-10-01T15:01:00Z",
+         "content":"The new reality of nowadays has changed all of us dramatically. It is still changing everything: starting with the overall environment and ending with our treatment of the doctors who bear the main b… [+6181 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Freebuf.com"
+         },
+         "author":null,
+         "title":"支持使用clojure编写脚本的burp插件(burp-clj)",
+         "description":"插件简介burp-clj插件提供使用clojure编写burp脚本的功能。由于clojure的repl工作流很强大，开启nrepl之后，可以直接在burp的jvm进程中进行调试测试，非常方便。使用方法",
+         "url":"https://www.freebuf.com/sectool/251076.html",
+         "urlToImage":null,
+         "publishedAt":"2020-09-27T15:05:45Z",
+         "content":"releasejarBurp Extenderjar\r\nClojure PluginAddgithub https://github.com/ntestoc3/burp-scripts:\r\n1  \r\n2  \r\nburp extender API,burp-clj\r\nnrepl.clj/clojure nreplburp extender API(reg-script!)\r\n3  nrepl\r\nb… [+346 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Towardsdatascience.com"
+         },
+         "author":"Duane Bester",
+         "title":"A gentle intro to Clojure",
+         "description":"We will be using HttpKit to access the GitHub API and pull down information about an organization’s repositories. We will then leverage Clojure’s built in features to manipulate and explore the…",
+         "url":"https://towardsdatascience.com/a-gentle-intro-to-clojure-ad6c6802babe",
+         "urlToImage":"https://miro.medium.com/max/1200/0*Ad823U0UW9wqwdPO",
+         "publishedAt":"2020-09-25T21:23:24Z",
+         "content":"Make an API Request\r\n Its easiest to generate a Personal Access Token to use the API.\r\nAt this point, its best to try and access the GitHub API to make sure our Authentication and URLs are correct. A… [+1394 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Medium"
+         },
+         "author":"Mourjo Sen",
+         "title":"Load Shedding in Clojure",
+         "description":"This the second post in a two-part series. In the first part of the series, we discussed the different aspects of load shedding and why it matters to think of it as part of the design of web…",
+         "url":"https://medium.com/helpshift-engineering/load-shedding-in-clojure-d4857ce11588",
+         "urlToImage":"https://miro.medium.com/max/1200/1*s1F5gBwMvjUSB4joX_FfwQ.png",
+         "publishedAt":"2020-09-21T13:45:59Z",
+         "content":"This the second post in a two-part series. In the first part of the series, we discussed the different aspects of load shedding and why it matters to think of it as part of the design of web services… [+18533 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Dragan.rocks"
+         },
+         "author":"Dragan Djuric",
+         "title":"Deep Learning in Clojure with Fewer Parentheses than Keras and Python",
+         "description":"I demonstrate this by direct comparison with the paragon of simplicity and elegance of deep learning in Python - Keras.",
+         "url":"https://dragan.rocks/articles/20/Deep-Diamond-Deep-Learning-in-Clojure-Fewer-Parentheses-Python-Keras",
+         "urlToImage":null,
+         "publishedAt":"2020-09-17T19:30:00Z",
+         "content":"You can adopt a pet function!\r\nSupport my work on my Patreon page, and access my dedicated discussion server. Can't afford to donate? Ask for a free invite.\r\nSeptember 17, 2020\r\nPlease share: Twitter… [+4598 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Otavio.dev"
+         },
+         "author":"Otavio Valadares",
+         "title":"Clojure Journey VI – Data",
+         "description":"My sixth step on my journey through learn Clojure. In this step we talk about how Clojure handle basic data and its basic datatypes.",
+         "url":"https://otavio.dev/2020/09/16/clojure-journey-vi-data/",
+         "urlToImage":"https://otaviodev.files.wordpress.com/2020/08/sicp.jpg",
+         "publishedAt":"2020-09-16T23:56:33Z",
+         "content":"Data is the core of all computer application, an information system basically receives information as input, executes operations and produces some output. Data is the core of computation, we execute … [+6658 chars]"
+      },
+      {
+         "source":{
+            "id":null,
+            "name":"Github.com"
+         },
+         "author":"gw",
+         "title":"Show HN: O'Doyle Rules – a new rules engine for Clojure",
+         "description":"Article URL: https://github.com/oakes/odoyle-rules\nComments URL: https://news.ycombinator.com/item?id=24471015\nPoints: 2\n# Comments: 0",
+         "url":"https://github.com/oakes/odoyle-rules",
+         "urlToImage":"https://avatars0.githubusercontent.com/u/216147?s=400&v=4",
+         "publishedAt":"2020-09-14T15:05:40Z",
+         "content":"O'Doyle does indeed rule. And you will, too, when you use O'Doyle Rules, a rules engine for Clojure and ClojureScript. Stop being one of those jabronis that don't rule things. When I was a kid in Vir… [+10399 chars]"
+      }
+   ]
+}
