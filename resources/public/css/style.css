@@ -23,6 +23,9 @@ body {
   max-height: 80vh;
 }
 
+.article__head {
+  border-bottom: 1px solid #ccc;
+}
 .article__hero {
   height: 20rem;
   background-position: 50% 50%;

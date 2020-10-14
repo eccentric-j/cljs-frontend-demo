@@ -8,16 +8,15 @@
 (def news (r/atom []))
 (def selected-article (r/atom nil))
 
-(defn req-json->clj
-  [body]
-  (p/-> body
-        (.json)
-        (js->clj :keywordize-keys true)))
+(defn json->clj
+  [json-data]
+  (js->clj json-data :keywordize-keys true))
 
 (defn fetch-news
   []
   (p/->> (js/fetch "/clojure-news.json")
-         (req-json->clj)
+         (.json)
+         (json->clj)
          (:articles)
          (take 8)))
 
@@ -31,7 +30,6 @@
       [:button.articles-list__button
        {:on-click #(reset! selected-article article)}
        [:h2.articles-list__title (:title article)]
-       [:cite.articles-list__author (:author article)]
        [:date.articles-list__date (:publishedAt article)]]])]])
 
 (defn summary-view
@@ -40,7 +38,12 @@
    (if-not article
      [:p.no-summary "Click an article to view details"]
      [:div.article__content
-      [:h1.article__title (:title article)]
+      [:header.article__head
+       [:h1.article__title (:title article)]
+       [:p.article__byline
+        [:date.article__date (:publishedAt article)]
+        " by "
+        [:cite.article__author (:author article)]]]
       (if (:urlToImage article)
         [:div.article__hero
          {:style {:background-image (str "url(" (:urlToImage article) ")")}}])
