@@ -15,6 +15,8 @@ A test project to create a realistic frontend app using ClojureScript.
 Can I build a frontend app that loads news from a JSON source, displays a list
 of links, then displays the selected article summary within an hour?
 
+[[./doc/demo-project-details.png]]
+
 ** Results
 
 I completed the project within an hour, had a bit of time to spare on polishing
@@ -26,6 +28,11 @@ ClojureScript app.
 
 Configuration took about 15 minutes to get right before could really begin, but
 once I got the shadow app reloading on save I was able to speed right up after that.
+
+I did make some mistakes from the mockup. I went by memory and forgot to display
+the date and author with the summary and not the articles sidebar. Not really
+important for evaluating this, but something to keep in mind if reviewing
+another's take on this.
 
 ** Code Review
 
