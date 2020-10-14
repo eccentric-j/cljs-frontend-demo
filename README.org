@@ -1,0 +1,74 @@
+#+TITLE: ClojureScript Frontend Demo
+
+A test project to create a realistic frontend app using ClojureScript.
+
+** Usage
+
+1. Clone the repo
+2. ~cd cljs-frontend-demo~
+3. Run ~npm install~
+4. Run ~npx shadow-cljs watch :app~
+5. Visit =http://localhost:8888/= in your browser
+
+** Challenge
+
+Can I build a frontend app that loads news from a JSON source, displays a list
+of links, then displays the selected article summary within an hour?
+
+** Results
+
+I completed the project within an hour, had a bit of time to spare on polishing
+the UI a little bit. The code quality came out OK, but didn't write any comments
+though I don't think any part came out particularly complex or unique for a
+ClojureScript app.
+
+[[./doc/screencast.gif]]
+
+Configuration took about 15 minutes to get right before could really begin, but
+once I got the shadow app reloading on save I was able to speed right up after that.
+
+** Code Review
+
+*** Documentation
+
+Should have documented the code more but ultimately I think each component and
+function is pretty self-explanatory.
+
+*** Fetching
+
+The =fetch-news= function makes sense, but the =req-json->clj= could have been a bit simpler.
+
+Instead of:
+
+#+BEGIN_SRC clojure
+(defn req-json->clj
+  [body]
+  (p/-> body
+        (.json)
+        (js->clj :keywordize-keys true)))
+
+(defn fetch-news
+  []
+  (p/->> (js/fetch "/clojure-news.json")
+         (req-json->clj)
+         (:articles)
+         (take 8)))
+#+END_SRC
+
+Could be expressed like:
+
+#+BEGIN_SRC clojure
+(defn json->clj
+  [json-data]
+  (js->clj json-data :keywordize-keys true))
+
+(defn fetch-news
+  []
+  (p/->> (js/fetch "/clojure-news.json")
+         (.json)
+         (json->clj)
+         (:articles)
+         (take 8)))
+#+END_SRC
+
+Which would make the =json->clj= function a bit more generic and focused.
