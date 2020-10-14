@@ -36,6 +36,8 @@ another's take on this.
 
 ** Code Review
 
+Cleaned up version at [[https://github.com/eccentric-j/cljs-frontend-demo/tree/cleanup]]
+
 *** Documentation
 
 Should have documented the code more but ultimately I think each component and
