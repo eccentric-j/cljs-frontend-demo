@@ -42,15 +42,18 @@
 (defn articles-view
   "
   Sidebar displaying a list of articles. Clicking on title selects an article.
-  Takes a list of article hash-maps to render
+  Takes a list of article hash-maps to render and currently selected article or
+  nil if no article was selected.
   Returns a nav element in hiccup form
   "
-  [articles]
+  [articles selected]
   [:nav.articles
    [:ul.articles-list
     (for [article articles]
       [:li.articles-list__item
-       {:key (:publishedAt article)}
+       {:key (:publishedAt article)
+        :class (when (= (:url article) (:url selected))
+                 "selected")}
        [:button.articles-list__button
         {:on-click #(reset! selected-article article)}
         [:h2.articles-list__title (:title article)]
@@ -71,7 +74,11 @@
      [:p.no-summary "Click an article to view details"]
      [:div.article__content
       [:header.article__head
-       [:h1.article__title (:title article)]
+       [:h1.article__title
+        [:a
+         {:href (:url article)
+          :target "_blank"}
+         (:title article)]]
        [:p.article__byline
         [:date.article__date (:publishedAt article)]
         " by "
@@ -93,7 +100,7 @@
   (let [articles @news
         article @selected-article]
     [:div.news-view
-     [articles-view articles]
+     [articles-view articles article]
      [summary-view article]]))
 
 (defn app
