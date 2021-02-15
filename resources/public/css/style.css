@@ -23,6 +23,9 @@ body {
   max-height: 80vh;
 }
 
+.article__head {
+  border-bottom: 1px solid #ccc;
+}
 .article__hero {
   height: 20rem;
   background-position: 50% 50%;
@@ -44,13 +47,16 @@ body {
 }
 .articles-list__title {
   margin: 0;
-  line-height: 1;
-  font-size: 1.1rem;
+  line-height: 1.2;
+  font-size: 1rem;
 }
 .articles-list__item {
-  margin-bottom: 1rem;
+  padding: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #ccc;
+}
+.articles-list__item.selected {
+  background: #E5E5E5;
 }
 .articles-list__author {
   display: block;
